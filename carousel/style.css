@@ -1,0 +1,85 @@
+#slideshow {
+	position:relative;    /*Чтобы позиционировать абсолютно div#slidecontrollers*/
+	overflow:hidden;    /*Чтобы полосы прокрутки не появлялись от более длинного div#slideimages*/
+	width:500px;    /*Дизайн*/
+	height:400px;
+	font-size:0;
+}
+
+#controlrow {
+	position:absolute;    /*Чтобы поверх слайдов был*/
+	z-index:2;    /*Чтобы поверх слайдов был*/
+	bottom:8px;    /*Дизайн*/
+	width:500px;
+	opacity:0.5;    /*Чтобы не мешалась, сначала будет скрыта*/
+	filter:alpha(opacity=0);    /*Очень не хочется, но забывать нельзя про них*/
+	background-color: rgba(255, 255, 255, 0.5);    /*Дизайн*/
+	border-top: 1px solid rgba(255, 255, 255, 0.35);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#slidecounter {
+	float:left;    /*Выравнивание по левому краю*/
+	margin: 5px 9px;    /*Дизайн*/
+	color: #727272;
+	text-shadow: 0 0 1px #727272;
+	font-size: 23px;
+}
+
+#slidetitle {
+	float:left;    /*Выравнивание по левому краю*/
+	margin:11px 0;    /*Дизайн*/
+	overflow:hidden;
+	font-size:14px;
+	color:#e5e5e5;
+}
+
+.slideimage {
+	width:500px;    /*Дизайн*/
+	float:left;    /*Выравнивание по правому краю*/
+}
+
+#slidecontrollers {
+	float:right;    /*Выравнивание по правому краю*/
+	width:159px;    /*Дизайн*/
+	height:47px;
+	box-shadow:0 1px 0 rgba(255,255,255,0.16), inset 0 2px 3px rgba(0,0,0,0.6);
+	-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.16), inset 0 2px 3px rgba(0,0,0,0.6);
+	-moz-box-shadow:0 1px 0 rgba(255,255,255,0.16), inset 0 2px 3px rgba(0,0,0,0.6);
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	background:#222;
+	margin:6px 9px 4px;
+	text-align:center;
+	padding:4px;
+}
+
+.imtype {
+	display:inline-block;    /*Кнопки сделаем  инлайн элементами, но в то же время оставим блочными*/
+	width:45px;    /*Дизайн*/
+	height:45px;
+	background-repeat:no-repeat;
+	background-position:center;
+	cursor:pointer;
+}
+
+#rew {
+	background-image:url('img/rew.jpg');    /*Назад прокрутка*/
+}
+
+#few {
+	background-image:url('img/for.jpg');    /*Вперед прокрутка*/
+}
+
+.play {
+	background-image:url('img/play.jpg');    /*Начать автопрокрутку*/
+}
+
+.pause {
+	background-image:url('img/pause.jpg');    /*Остановить автопрокрутку*/
+}
+
+#play-pause {
+	margin:0 8px;    /*Дизайн*/
+}
